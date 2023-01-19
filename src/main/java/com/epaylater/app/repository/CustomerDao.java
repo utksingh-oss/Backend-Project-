@@ -13,7 +13,7 @@ import java.util.List;
 
 public interface CustomerDao{
     @Transaction
-    @SqlUpdate("INSERT INTO customer(name, address, emailId, contact_number, credit_limit, loaned_amount) VALUES(:name, :address, :emailId, :contact_number, :credit_limit. :loaned_amount)")
+    @SqlUpdate("INSERT INTO customer(name, address, emailId, contact_number, credit_limit, loaned_amount) VALUES(:name, :address, :emailId, :contact_number, :credit_limit, :loaned_amount)")
     @GetGeneratedKeys
     int createCustomer(@BindBean Customer customer);
 
